@@ -3,9 +3,9 @@ package designpatterns.facade;
 import java.util.List;
 
 public class OrderFacade {
-    private InventorySystem inventorySystem;
-    private PaymentSystem paymentSystem;
-    private ShippingSystem shippingSystem;
+    private final InventorySystem inventorySystem;
+    private final PaymentSystem paymentSystem;
+    private final ShippingSystem shippingSystem;
 
     public OrderFacade(){
         this.inventorySystem = new InventorySystem();

@@ -7,8 +7,8 @@ public class Main {
             WeatherDisplay airportDisplay = new WeatherDisplay();
             WeatherDisplay trainStationDisplay = new WeatherDisplay();
 
-            weatherStation.registerObserver(airportDisplay);
-            weatherStation.registerObserver(trainStationDisplay);
+//            weatherStation.registerObserver(airportDisplay);
+//            weatherStation.registerObserver(trainStationDisplay);
 
             weatherStation.setTemperature(25);
             weatherStation.setTemperature(30);

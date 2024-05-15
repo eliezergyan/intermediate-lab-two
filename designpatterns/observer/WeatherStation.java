@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Observer;
 
 public class WeatherStation implements Subject{
-    private List<java.util.Observer> observers;
+    private List<Observer> observers;
     private int temperature;
 
     public WeatherStation(){
@@ -18,19 +18,19 @@ public class WeatherStation implements Subject{
     }
 
     @Override
-    public void registerObserver(java.util.Observer observer){
+    public void registerObserver(Observer observer){
         observers.add(observer);
     }
 
     @Override
-    public void removeObserver(java.util.Observer observer){
+    public void removeObserver(Observer observer){
         observers.remove((observer));
     }
 
     @Override
     public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.update(temperature);
-        }
+//        for (Observer observer : observers) {
+//            observer.update(temperature);
+//        }
     }
 }
